@@ -1,0 +1,11 @@
+load(":read.bzl", "read")
+load(":write.bzl", "file")
+
+file(
+  name = "myjs",
+)
+
+read(
+  name = "bundle",
+  deps = [":myjs"],
+)
